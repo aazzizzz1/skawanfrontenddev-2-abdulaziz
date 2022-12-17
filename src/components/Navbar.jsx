@@ -6,8 +6,7 @@ function Navbar() {
     return (
         <Nav>
                 <div className="title">
-                    <h1>Dashboard</h1>
-                    <h5>Payment updates</h5>
+                    <h4>Your visa</h4>
                 </div>
                 <div className="search">
                     <BiSearch />
@@ -23,7 +22,8 @@ const Nav = styled.nav`
     justify-content: space-between;
     color: black;
     .title{
-        h5{
+        h4{
+            margin-top: 15px;
             color: grey;
         }
     }

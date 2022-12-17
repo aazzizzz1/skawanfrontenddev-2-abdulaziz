@@ -4,13 +4,16 @@ import Navbar from './Navbar'
 import Analytic from './Analytic'
 import Balance from './Balance'
 import History from './History'
+import Services from './Service'
 function Dashboard() {
     return (
         <Section>
-           
+            <p>hello!</p>
+           <h1>Abdul Aziz</h1>
             <div className="grid">        
                     <Navbar />
                     <Analytic />
+                    <Services/>
                     <Balance />
                     <History />    
             </div>
@@ -19,7 +22,8 @@ function Dashboard() {
 }
 
 export default Dashboard
-const Section = styled.section `
+const Section = styled.section 
+`
 margin-left: 5vw;
 margin-right: 14px;
 padding: 2rem;

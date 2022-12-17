@@ -115,6 +115,7 @@ const data = [
 
   ];
 const Section = styled.section`
+margin-bottom: 50px;
 .sales{
     color: black;
     width: 100%;

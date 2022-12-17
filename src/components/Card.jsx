@@ -34,7 +34,7 @@ const Section = styled.section`
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
     border-radius: 1rem;
     color: black;
-    background-color: #22202B;
+    background-color: #06cdfe;
     align-items: center;
     gap: 0.5rem;
     transition: 0.5s ease-in-out;

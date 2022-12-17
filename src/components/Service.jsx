@@ -1,44 +1,46 @@
 import React from 'react'
 import styled from 'styled-components'
-import apple from "../assets/avatar.jpg"
+// import apple from "../assets/avatar.jpg"
+import { BiTransfer } from "react-icons/bi";
+import { BsBank } from "react-icons/bs";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { BsCreditCard } from "react-icons/bs";
 
-function History() {
+function Services() {
     return (
         <Section>
         <div className="orders">
-        <div className="orders__details">
+      <div className="orders__details">
           <div>
-                <h4>Activity</h4> 
-              
+                <h4>Services</h4> 
           </div>
           <div> 
-          <h6>Transection of last months</h6> 
-            
+          <h6>View All</h6>    
           </div>
         </div>
         <div className="orders__table">
             <table>
             <tr>
-              <td><img src={apple} alt="" /></td>
-              <td >Deposito</td>
-              <td>14:10:32 AM</td>
-              <td>Rp-15.000.000,00</td>
-              <td >Complete</td>
+                    <td><div className="logo">
+                        <BsCreditCard />
+                    </div></td>
+                    <td><div className="logo">
+                        <BsBank />
+                    </div></td>
+                    <td><div className="logo">
+                        <GiTakeMyMoney />
+                    </div></td>
+                    <td><div className="logo">
+                        <BiTransfer />
+                    </div></td>
             </tr>
             <tr>
-              <td><img src={apple} alt="" /></td>
-              <td >Car Insurance</td>
-              <td>14:10:32 AM</td>
-              <td>Rp-350.000</td>
-              <td >Complete</td>
+            <td >Card</td>
+              <td >Finance</td>
+              <td>Assurance</td>
+              <td>Help</td>
             </tr>
-            <tr>
-              <td><img src={apple} alt="" /></td>
-              <td >WithDarw</td>
-              <td>14:10:32 AM</td>
-              <td>Rp-555.000</td>
-              <td >Complete</td>
-            </tr>
+            
             </table>
         </div>
         </div>
@@ -46,7 +48,7 @@ function History() {
     )
 }
 
-export default History
+export default Services
 const Section = styled.section`
 
 .orders {
@@ -69,6 +71,8 @@ const Section = styled.section`
         justify-content: space-between;
         margin: 1rem 0;
         color: grey;
+        .logo{
+        }
         table {
             border-collapse: collapse;
             width: 100%;

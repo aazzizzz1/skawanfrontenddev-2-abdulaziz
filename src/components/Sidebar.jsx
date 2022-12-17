@@ -102,6 +102,7 @@ justify-content: space-between;
 padding: 2rem 0;
 gap: 2rem;
 .top{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 4rem;
