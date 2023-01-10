@@ -62,10 +62,9 @@ function Analytic() {
 
 export default Analytic
 const Section = styled.section `
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    margin: 0 60px;
     .analytic {
         justify-content: space-between;
         padding: 1rem 2rem 1rem 2rem;
@@ -113,4 +112,8 @@ const Section = styled.section `
             }
         }
     }
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        grid-template-columns: repeat(1, 1fr);
+      }
 `;
